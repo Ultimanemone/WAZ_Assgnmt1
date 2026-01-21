@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using WAZ_Assgnmt1.Actors;
 
 namespace WAZ_Assgnmt1.Core
 {
@@ -13,14 +14,15 @@ namespace WAZ_Assgnmt1.Core
 
     public class BattleSceneManager : MonoBehaviour
     {
+        [SerializeField] private AnimationCurve spawnCurve;
+        [SerializeField] private GameObject pausedMenu;
+        [SerializeField] private GameObject settingsMenu;
+
         public static BattleSceneManager instance { get; private set; }
         public BattleSceneState state { get; private set; }
         public float timer { get; private set; }
-        private const float time = 67f;
-        [SerializeField] private AnimationCurve spawnCurve;
-        [SerializeField] private AnimationCurve creditCurve;
-        [SerializeField] private GameObject pausedMenu;
-        [SerializeField] private GameObject settingsMenu;
+        private const float timeLimit = 67f;
+        private float score = 0f;
 
         private void Awake()
         {
@@ -91,9 +93,10 @@ namespace WAZ_Assgnmt1.Core
             return spawnCurve.Evaluate(timer);
         }
 
-        public float GetSpawnCredits()
+        public void Kill(Threat unit)
         {
-            return creditCurve.Evaluate(timer);
+            score += 5;
+            unit.Despawn();
         }
     }
 }

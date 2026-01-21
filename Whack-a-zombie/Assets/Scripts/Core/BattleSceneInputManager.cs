@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace WAZ_Assgnmt1.Core
 {
@@ -19,7 +20,7 @@ namespace WAZ_Assgnmt1.Core
 
         private void Update()
         {
-            if (UnityEngine.InputSystem.Keyboard.current.escapeKey.wasPressedThisFrame && BattleSceneManager.instance.state != BattleSceneState.Hitlag)
+            if (Keyboard.current.escapeKey.wasPressedThisFrame && BattleSceneManager.instance.state != BattleSceneState.Hitlag)
             {
                 if (BattleSceneManager.instance.state == BattleSceneState.Settings)
                 {
@@ -29,6 +30,14 @@ namespace WAZ_Assgnmt1.Core
                 {
                     BattleSceneManager.instance.TogglePauseMenu();
                 }
+            }
+        }
+
+        private void FixedUpdate()
+        {
+            if (Mouse.current.leftButton.wasReleasedThisFrame)
+            {
+
             }
         }
     }

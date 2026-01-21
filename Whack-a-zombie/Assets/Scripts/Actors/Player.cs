@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace WAZ_Assgnmt1.Actors
 {
@@ -10,14 +11,14 @@ namespace WAZ_Assgnmt1.Actors
 
     public class Player : MonoBehaviour
     {
-        void Start()
+        private void FixedUpdate()
         {
 
         }
 
-        void FixedUpdate()
+        public void Fire()
         {
-
+            
         }
     }
 }

@@ -1033,6 +1033,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1712457045}
+  - component: {fileID: 1712457046}
+  - component: {fileID: 1712457047}
   m_Layer: 0
   m_Name: Spawns
   m_TagString: Untagged
@@ -1040,13 +1042,14 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1712457045
-RectTransform:
+--- !u!4 &1712457045
+Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1712457044}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -1054,11 +1057,39 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!65 &1712457046
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712457044}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16, y: 10, z: 10}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1712457047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712457044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d14e29a1fd6ab34ebcb756afe061824, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1746250396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1547,48 +1578,6 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  creditCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: Infinity
-      outSlope: Infinity
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 7
-      value: 1
-      inSlope: 0.021137727
-      outSlope: 0.021137727
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.145787
-    - serializedVersion: 3
-      time: 67
-      value: 3
-      inSlope: 0.05398519
-      outSlope: 0.05398519
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.07077535
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 80
-      value: 0
-      inSlope: -Infinity
-      outSlope: -Infinity
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
   pausedMenu: {fileID: 564550787}
   settingsMenu: {fileID: 423582117}
 --- !u!224 &2100768762
@@ -1608,7 +1597,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 12, y: 8}
+  m_SizeDelta: {x: 9, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &2100768763
 Canvas:
@@ -1645,12 +1634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d1532f22838688469a7f08580a167b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitPrefabs:
-  - {fileID: 8166809435182730261, guid: 1ffaefc469a33c54f918c99e38be1614, type: 3}
-  - {fileID: 9068519827548193372, guid: c7f163d4a641d404aa6bfe3115ceeaa1, type: 3}
-  - {fileID: 4219224657708217884, guid: e3d9651afc235b14cbe6bfba2a9bc2dd, type: 3}
-  - {fileID: 7097541982510289004, guid: e2c05e841da204c4e940b56798f3598b, type: 3}
-  unitRoot: {fileID: 0}
+  threatPrefab: {fileID: 935881306698692007, guid: 49c9ee9fb49665a478e72d3207e6446b, type: 3}
+  unitRoot: {fileID: 1712457045}
 --- !u!1001 &4169683781611741739
 PrefabInstance:
   m_ObjectHideFlags: 0

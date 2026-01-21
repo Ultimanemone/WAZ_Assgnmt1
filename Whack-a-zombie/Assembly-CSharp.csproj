@@ -61,18 +61,15 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.60f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Actors\Enemies\Blocker.cs" />
+    <Compile Include="Assets\Scripts\Actors\ThreatSpawner.cs" />
     <Compile Include="Assets\Scripts\Actors\Player.cs" />
+    <Compile Include="Assets\Scripts\Actors\ThreatArea.cs" />
     <Compile Include="Assets\Scripts\Core\BattleSceneManager.cs" />
-    <Compile Include="Assets\Scripts\Actors\Enemies\Crawler.cs" />
-    <Compile Include="Assets\Scripts\Actors\Unit.cs" />
+    <Compile Include="Assets\Scripts\Actors\ThreatPool.cs" />
     <Compile Include="Assets\Scripts\Core\Bootstrapper.cs" />
+    <Compile Include="Assets\Scripts\Actors\Threat.cs" />
     <Compile Include="Assets\Scripts\Core\TitleInputManager.cs" />
-    <Compile Include="Assets\Scripts\Actors\Enemies\Flier.cs" />
-    <Compile Include="Assets\Scripts\Actors\UnitPool.cs" />
     <Compile Include="Assets\Scripts\Core\BattleSceneInputManager.cs" />
-    <Compile Include="Assets\Scripts\Actors\Enemies\Walker.cs" />
-    <Compile Include="Assets\Scripts\Actors\UnitSpawner.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
   </ItemGroup>
   <ItemGroup>
