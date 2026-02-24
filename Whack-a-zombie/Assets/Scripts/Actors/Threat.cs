@@ -1,19 +1,37 @@
+using Aimer_Assgnmt1.Core;
+using System.Collections;
 using UnityEngine;
 
-namespace WAZ_Assgnmt1.Actors
+namespace Aimer_Assgnmt1.Actors
 {
     public class Threat : MonoBehaviour
     {
-        public Vector3 velocity;
+        private float lifetime;
 
-        public void Despawn()
+        public void Init(Vector3 pos, float lifetime)
         {
+            gameObject.SetActive(true);
+            transform.position = pos;
+            this.lifetime = lifetime;
+        }
+
+        public void Kill()
+        {
+            GetComponent<Animator>().Play("Kill");
+            StartCoroutine(ReturnCR());
+        }
+
+        private IEnumerator ReturnCR()
+        {
+            yield return new WaitForSeconds(0.5f);
             ThreatPool.Return(this);
+            yield break;
         }
 
         private void FixedUpdate()
         {
-            transform.position += velocity;
+            if (lifetime <= 0) Kill();
+            lifetime -= Time.deltaTime;
         }
     }
 }

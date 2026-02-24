@@ -1,6 +1,7 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-namespace WAZ_Assgnmt1.Core
+namespace Aimer_Assgnmt1.Core
 {
     public class TitleInputManager : MonoBehaviour
     {

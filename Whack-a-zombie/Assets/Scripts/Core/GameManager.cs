@@ -1,14 +1,21 @@
 using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace WAZ_Assgnmt1.Core
+namespace Aimer_Assgnmt1.Core
 {
     public class GameManager : MonoBehaviour
     {
         public static GameManager instance { get; private set; }
         public string currentScene { get; private set; }
         public bool isPaused { get; private set; }
+        [SerializeField] private AudioSource _music;
+        [SerializeField] private AudioSource _sfx;
+        private bool _isPlaying;
+        private float _sfxVol = 1f;
+        public int runDuration { get; private set; } = 60;
+
         private GameManager() { }
 
         private void Awake()
@@ -84,6 +91,64 @@ namespace WAZ_Assgnmt1.Core
         {
             Debug.Log("Game Quit");
             Application.Quit();
+        }
+
+        public void PlayMusic(bool play)
+        {
+            if (play)
+            {
+                _music.Play();
+                _isPlaying = true;
+            }
+            else
+            {
+                _music.Stop();
+                _isPlaying = false;
+            }
+        }
+
+        public void ToggleMusic()
+        {
+            if (_isPlaying)
+            {
+                _music.Pause();
+                _isPlaying = false;
+            }
+            else
+            {
+                _music.UnPause();
+                _isPlaying = true;
+            }
+        }
+
+        public void PlaySFX(AudioClip audioClip, float volume = 1f)
+        {
+            AudioSource source = Instantiate(_sfx);
+            source.clip = audioClip;
+            source.volume = _sfxVol * volume;
+            source.Play();
+            Destroy(source.gameObject, audioClip.length + 1f);
+            //Destroy(source.gameObject, 3f);
+        }
+
+        private void Update()
+        {
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name == "Title" || scene.name == "Game")
+            {
+                GameObject settings = GameObject.FindWithTag("Settings");
+                if (settings != null)
+                {
+                    SettingsData settingsData = settings.GetComponent<SettingsData>();
+                    _music.volume = settingsData.musicVol / 4f;
+                    _sfxVol = settingsData.sfxVol / 4f;
+
+                    if (scene.name == "Title")
+                    {
+                        runDuration = settingsData.runDuration;
+                    }
+                }
+            }
         }
     }
 }

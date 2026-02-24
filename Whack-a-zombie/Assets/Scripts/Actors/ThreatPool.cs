@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace WAZ_Assgnmt1.Actors
+namespace Aimer_Assgnmt1.Actors
 {
     public static class ThreatPool
     {

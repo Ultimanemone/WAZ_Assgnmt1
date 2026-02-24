@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace WAZ_Assgnmt1.Actors
+namespace Aimer_Assgnmt1.Actors
 {
     public enum PlayerState
     {

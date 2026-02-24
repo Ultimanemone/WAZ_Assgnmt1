@@ -1,33 +1,42 @@
+using Aimer_Assgnmt1.Core;
 using UnityEngine;
-using WAZ_Assgnmt1.Core;
+using static UnityEngine.Rendering.DebugUI;
 
-namespace WAZ_Assgnmt1.Actors
+namespace Aimer_Assgnmt1.Actors
 {
     public class ThreatSpawner : MonoBehaviour
     {
         [SerializeField] private Threat threatPrefab;
         [SerializeField] private Transform unitRoot;
         private RectTransform spawnArea;
-        private float spawnTimer;
-        private float spawnCooldown;
+        private float timer = 0f;
+        private float interval = 14.4f; // 14.4 ticks per beat
+        private float intervalTime;
+        private float cooldown;
 
         private void Awake()
         {
             spawnArea = GetComponent<RectTransform>();
-            spawnCooldown = 7.1f;
-            spawnTimer = 0f;
             ThreatPool.Init(threatPrefab, unitRoot);
+        }
+
+        private void Start()
+        {
+            intervalTime = interval * Time.fixedDeltaTime;
+            cooldown = 6.25f;
         }
 
         private void FixedUpdate()
         {
-            if (spawnTimer > spawnCooldown)
+            timer += Time.fixedDeltaTime;
+
+            if (timer >= cooldown && BattleSceneManager.instance.state == BattleSceneState.Playing)
             {
-                    spawnTimer = 0f;
-                spawnCooldown = BattleSceneManager.instance.GetSpawnCD() * Random.Range(0.85f, 1.1f);
+                timer -= cooldown;
+                float temp = BattleSceneManager.instance.GetSpawnCD();
+                cooldown = Mathf.Round(temp / intervalTime) * intervalTime;
                 Spawn();
             }
-            spawnTimer += Time.deltaTime;
         }
 
         public void Spawn()
@@ -43,12 +52,7 @@ namespace WAZ_Assgnmt1.Actors
 
             ThreatPool.TryGet(out Threat threat);
 
-            Vector3 direction = spawnPos.normalized;
-            Vector3 velocity = (2f - threat.transform.position.magnitude) * direction * Time.deltaTime;
-
-            threat.velocity = velocity;
-            threat.transform.position = spawnPos;
-            threat.gameObject.SetActive(true);
+            threat.Init(spawnPos, 3f);
 
             Debug.Log($"Threat deployed");
         }

@@ -1,28 +1,64 @@
+using Aimer_Assgnmt1.Actors;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using WAZ_Assgnmt1.Actors;
+using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
-namespace WAZ_Assgnmt1.Core
+namespace Aimer_Assgnmt1.Core
 {
     public enum BattleSceneState
     {
         Playing,
         Paused,
-        Hitlag,
+        Results,
         Settings
     }
 
     public class BattleSceneManager : MonoBehaviour
     {
-        [SerializeField] private AnimationCurve spawnCurve;
-        [SerializeField] private GameObject pausedMenu;
-        [SerializeField] private GameObject settingsMenu;
+        [SerializeField] private AnimationCurve _spawnCurve;
+        [SerializeField] private GameObject _pausedMenu;
+        [SerializeField] private GameObject _settingsMenu;
+        [SerializeField] private GameObject _resultScreen;
+        [SerializeField] private GameObject _stats;
+        [SerializeField] private AudioClip shootSfx;
+        [SerializeField] private List<AudioClip> hitSfx;
+        [SerializeField] private AudioClip reloadSfx;
+        [SerializeField] private GameObject cursor;
+        [SerializeField] private Image cursorAim;
+        [SerializeField] private Image cursorReload;
 
         public static BattleSceneManager instance { get; private set; }
         public BattleSceneState state { get; private set; }
-        public float timer { get; private set; }
-        private const float timeLimit = 67f;
-        private float score = 0f;
+        public float Time
+        {
+            get { return Mathf.Min(_timer - 6f, GameManager.instance.runDuration); }
+        }
+        private float TimeLimit
+        {
+            get
+            {
+                return GameManager.instance.runDuration;
+            }
+        }
+        private float _timer;
+
+        public int score { get; private set; }
+        public int combo { get; private set; }
+        public int hit { get; private set; }
+        public int miss { get; private set; }
+        public float Accuracy
+        {
+            get
+            {
+                if ((hit + miss) < 1) return 0;
+                return (float)hit / (hit + miss);
+            }
+        }
+        private const float _reloadTime = 0.864f;
+        private float _reloadCounter = 0f;
+        private bool _isReloaded;
 
         private void Awake()
         {
@@ -33,21 +69,69 @@ namespace WAZ_Assgnmt1.Core
             }
 
             instance = this;
-            timer = 0f;
-            pausedMenu.SetActive(false);
-            settingsMenu.SetActive(false);
+            _pausedMenu.SetActive(false);
+            _settingsMenu.SetActive(false);
+            _resultScreen.SetActive(false);
+        }
+
+        private void Start()
+        {
+            GameManager.instance.PlayMusic(true);
+            _timer = 0f;
             state = BattleSceneState.Playing;
+            score = combo = 0;
+            _isReloaded = true;
         }
 
         private void FixedUpdate()
         {
-            timer += Time.deltaTime;
+            _timer += UnityEngine.Time.deltaTime;
+            _reloadCounter += UnityEngine.Time.deltaTime;
+
+            if (_reloadCounter > _reloadTime && !_isReloaded)
+            {
+                GameManager.instance.PlaySFX(reloadSfx);
+                _isReloaded = true;
+            }
+
+            if (Time >= TimeLimit)
+            {
+                Finish();
+            }
+        }
+
+        private void Update()
+        {
+            if (state == BattleSceneState.Playing)
+            {
+                Cursor.visible = false;
+                cursor.SetActive(true);
+                if (_isReloaded)
+                {
+                    cursorReload.gameObject.SetActive(false);
+                    cursorAim.gameObject.SetActive(true);
+                }
+                if (!_isReloaded)
+                {
+                    cursorAim.gameObject.SetActive(false);
+                    cursorReload.gameObject.SetActive(true);
+                    float prog = _reloadCounter / _reloadTime;
+                    cursorReload.fillAmount = prog;
+                    cursorReload.color = new Color(prog, Mathf.Sin(prog * Mathf.PI), Mathf.Max(0, 1 - prog * 2));
+                }
+                cursor.transform.position = Mouse.current.position.ReadValue();
+            }
+            else
+            {
+                Cursor.visible = true;
+                cursor.SetActive(false);
+            }
         }
 
         public void TogglePauseMenu()
         {
             bool pauseState = GameManager.instance.isPaused;
-            pausedMenu.SetActive(!pauseState);
+            _pausedMenu.SetActive(!pauseState);
 
             if (!pauseState) state = BattleSceneState.Paused;
             else state = BattleSceneState.Playing;
@@ -60,14 +144,14 @@ namespace WAZ_Assgnmt1.Core
             if (state == BattleSceneState.Paused)
             {
                 state = BattleSceneState.Settings;
-                pausedMenu.SetActive(false);
-                settingsMenu.SetActive(true);
+                _pausedMenu.SetActive(false);
+                _settingsMenu.SetActive(true);
             }
             else
             {
                 state = BattleSceneState.Paused;
-                pausedMenu.SetActive(true);
-                settingsMenu.SetActive(false);
+                _pausedMenu.SetActive(true);
+                _settingsMenu.SetActive(false);
             }
         }
 
@@ -78,25 +162,67 @@ namespace WAZ_Assgnmt1.Core
 
         public void Hitlag(float duration)
         {
-            Time.timeScale = 0f;
+            UnityEngine.Time.timeScale = 0f;
             StartCoroutine(HitlagCR(duration));
         }
 
         private IEnumerator HitlagCR(float duration)
         {
             yield return new WaitForSeconds(duration);
-            Time.timeScale = 1f;
+            UnityEngine.Time.timeScale = 1f;
         }
 
         public float GetSpawnCD()
         {
-            return spawnCurve.Evaluate(timer);
+            float res = _spawnCurve.Evaluate(Time);
+            return res;
         }
 
-        public void Kill(Threat unit)
+        public void Hit(Threat threat)
         {
-            score += 5;
-            unit.Despawn();
+            if (_isReloaded)
+            {
+                if (state == BattleSceneState.Playing)
+                {
+                    score += 5 + combo;
+                    ++combo;
+                    ++hit;
+                    threat.Kill();
+                    GameManager.instance.PlaySFX(hitSfx[Random.Range(0, hitSfx.Count - 1)]);
+                }
+                else
+                {
+                    GameManager.instance.PlaySFX(shootSfx);
+                }
+                // GameManager.instance.PlaySFX(shootSfx, 0.5f);
+                _isReloaded = false;
+                _reloadCounter = 0;
+            }
+        }
+
+        public void Miss()
+        {
+            if (_isReloaded)
+            {
+                if (state == BattleSceneState.Playing)
+                {
+                    combo = 0;
+                    ++miss;
+                }
+                GameManager.instance.PlaySFX(shootSfx);
+                _isReloaded = false;
+                _reloadCounter = 0;
+            }
+        }
+
+        public void Finish()
+        {
+            state = BattleSceneState.Results;
+            ResultData.instance.UpdateFinalStats();
+            _pausedMenu.SetActive(false);
+            _settingsMenu.SetActive(false);
+            _stats.SetActive(false);
+            _resultScreen.SetActive(true);
         }
     }
 }
