@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|c:\\users\\noone\\documents\\pg\\gp\\a1\\whack-a-zombie\\assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlesceneinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlesceneinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\actors\\threat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\actors\\threat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,28 +31,12 @@
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\actors\\threatpool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|c:\\users\\noone\\documents\\pg\\gp\\a1\\whack-a-zombie\\assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlestats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\savesystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlesceneinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlesceneinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\settingsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BattleStats.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleStats.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\BattleStats.cs",
@@ -75,12 +75,11 @@
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-13T12:42:49.781Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "ResultData.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\ResultData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\ResultData.cs",
@@ -89,22 +88,20 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAvwCEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T08:49:39.572Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "BattleSceneInputHandler.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneInputHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\BattleSceneInputHandler.cs",
               "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneInputHandler.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\BattleSceneInputHandler.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T09:21:04.717Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -112,7 +109,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "AspectRatio.cs",
+              "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\AspectRatio.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\AspectRatio.cs",
+              "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\AspectRatio.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Core\\AspectRatio.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:49:48.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "SaveSystem.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\SaveSystem.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\SaveSystem.cs",
@@ -120,18 +130,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Core\\SaveSystem.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwDMAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-19T08:37:17.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-19T08:37:17.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "BattleSceneManager.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\BattleSceneManager.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAUwH0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAewGoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T08:07:47.372Z",
               "EditorCaption": ""
@@ -146,8 +155,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SettingsData.cs",
               "ViewState": "AgIAABoAAAAAAAAAAAA9wAsAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-18T14:12:05.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-18T14:12:05.922Z"
             },
             {
               "$type": "Document",
@@ -163,19 +171,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Core\\GameManager.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAADwvxAAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T09:21:04.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 10,
               "Title": "ThreatSpawner.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Actors\\ThreatSpawner.cs",
@@ -184,25 +179,23 @@
               "RelativeToolTip": "Assets\\Scripts\\Actors\\ThreatSpawner.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAAIwCYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:30:24.365Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:30:24.365Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Threat.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Actors\\Threat.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Actors\\Threat.cs",
               "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Actors\\Threat.cs",
               "RelativeToolTip": "Assets\\Scripts\\Actors\\Threat.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:30:24.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:30:24.355Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "ThreatPool.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Actors\\ThreatPool.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Actors\\ThreatPool.cs",
@@ -210,12 +203,11 @@
               "RelativeToolTip": "Assets\\Scripts\\Actors\\ThreatPool.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAewCsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:30:24.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:30:24.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Actors\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Actors\\Player.cs",
@@ -223,8 +215,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Actors\\Player.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T09:59:29.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-18T09:59:29.432Z"
             },
             {
               "$type": "Document",

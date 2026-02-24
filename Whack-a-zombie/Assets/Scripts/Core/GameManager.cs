@@ -29,6 +29,7 @@ namespace Aimer_Assgnmt1.Core
 
             instance = this;
             DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(_music);
 
             SceneManager.sceneLoaded += OnSceneLoaded;
 #if !UNITY_EDITOR

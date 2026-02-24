@@ -33,7 +33,7 @@ namespace Aimer_Assgnmt1.Core
         public BattleSceneState state { get; private set; }
         public float Time
         {
-            get { return Mathf.Min(_timer - 6f, GameManager.instance.runDuration); }
+            get { return Mathf.Min(_timer - 7f, GameManager.instance.runDuration); }
         }
         private float TimeLimit
         {
@@ -105,6 +105,7 @@ namespace Aimer_Assgnmt1.Core
             if (state == BattleSceneState.Playing)
             {
                 Cursor.visible = false;
+                cursor.transform.localScale = Vector3.one * Screen.width / 1960f;
                 cursor.SetActive(true);
                 if (_isReloaded)
                 {
@@ -133,9 +134,18 @@ namespace Aimer_Assgnmt1.Core
             bool pauseState = GameManager.instance.isPaused;
             _pausedMenu.SetActive(!pauseState);
 
-            if (!pauseState) state = BattleSceneState.Paused;
-            else state = BattleSceneState.Playing;
+            if (!pauseState)
+            {
+                state = BattleSceneState.Paused;
+                _stats.SetActive(false);
+            }
+            else
+            {
+                state = BattleSceneState.Playing;
+                _stats.SetActive(true);
+            }
 
+            GameManager.instance.ToggleMusic();
             GameManager.instance.SetPaused(!pauseState);
         }
 

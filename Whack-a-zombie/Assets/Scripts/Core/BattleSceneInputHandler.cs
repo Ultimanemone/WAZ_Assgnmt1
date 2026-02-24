@@ -32,7 +32,6 @@ namespace Aimer_Assgnmt1.Core
                 else
                 {
                     BattleSceneManager.instance.TogglePauseMenu();
-                    GameManager.instance.ToggleMusic();
                 }
             }
 
