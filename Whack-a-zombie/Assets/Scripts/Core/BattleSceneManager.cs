@@ -202,7 +202,7 @@ namespace Aimer_Assgnmt1.Core
                 }
                 else
                 {
-                    GameManager.instance.PlaySFX(shootSfx);
+                    GameManager.instance.PlaySFX(shootSfx, 0.7f);
                 }
                 // GameManager.instance.PlaySFX(shootSfx, 0.5f);
                 _isReloaded = false;
@@ -223,6 +223,11 @@ namespace Aimer_Assgnmt1.Core
                 _isReloaded = false;
                 _reloadCounter = 0;
             }
+        }
+
+        public void ResetCombo()
+        {
+            combo = 0;
         }
 
         public void Finish()

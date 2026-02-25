@@ -141,7 +141,7 @@ namespace Aimer_Assgnmt1.Core
                 if (settings != null)
                 {
                     SettingsData settingsData = settings.GetComponent<SettingsData>();
-                    _music.volume = settingsData.musicVol / 4f;
+                    _music.volume = settingsData.musicVol / 4f * 0.8f;
                     _sfxVol = settingsData.sfxVol / 4f;
 
                     if (scene.name == "Title")

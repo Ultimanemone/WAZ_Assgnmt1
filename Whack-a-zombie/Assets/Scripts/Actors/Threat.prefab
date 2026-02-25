@@ -235,8 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3259857648365248080}
   - component: {fileID: 935881306698692007}
-  - component: {fileID: 7525583770101048514}
-  - component: {fileID: 8775645734341463955}
   - component: {fileID: -7317541230185749898}
   - component: {fileID: 6909187030209633010}
   m_Layer: 0
@@ -281,37 +279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2abb35a9e69cd6d49a4ee5fcca60ace1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!223 &7525583770101048514
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126998196222952993}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 2
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!222 &8775645734341463955
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5126998196222952993}
-  m_CullTransparentMesh: 1
 --- !u!58 &-7317541230185749898
 CircleCollider2D:
   m_ObjectHideFlags: 0

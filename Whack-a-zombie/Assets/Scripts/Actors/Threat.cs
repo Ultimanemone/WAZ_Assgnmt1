@@ -30,7 +30,11 @@ namespace Aimer_Assgnmt1.Actors
 
         private void FixedUpdate()
         {
-            if (lifetime <= 0) Kill();
+            if (lifetime <= 0)
+            {
+                BattleSceneManager.instance.ResetCombo();
+                Kill();
+            }
             lifetime -= Time.deltaTime;
         }
     }

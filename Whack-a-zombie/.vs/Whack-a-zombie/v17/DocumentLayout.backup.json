@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|c:\\users\\noone\\documents\\pg\\gp\\a1\\whack-a-zombie\\assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\battlescenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|c:\\users\\noone\\documents\\pg\\gp\\a1\\whack-a-zombie\\assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\aspectratio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\core\\battlesceneinputhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\core\\resultdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|c:\\users\\noone\\documents\\pg\\gp\\a1\\whack-a-zombie\\assets\\scripts\\actors\\threat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\assets\\scripts\\actors\\threat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{984B5438-4CF0-7C69-7FFE-7D456FDCC036}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\actors\\threat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
@@ -88,8 +88,7 @@
               "ViewState": "AgIAAA8AAAAAAAAAAAAvwCEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T08:49:39.572Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -102,25 +101,24 @@
               "ViewState": "AgIAABAAAAAAAAAAAAAgwCEAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-18T09:21:04.717Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "AspectRatio.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\AspectRatio.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\AspectRatio.cs",
               "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\AspectRatio.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\AspectRatio.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwCcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-24T12:49:48.2Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
@@ -136,13 +134,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "BattleSceneManager.cs",
               "DocumentMoniker": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "ToolTip": "C:\\Users\\NoOne\\Documents\\PG\\GP\\A1\\Whack-a-zombie\\Assets\\Scripts\\Core\\BattleSceneManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Core\\BattleSceneManager.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAewG0AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAewGoAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-19T08:07:47.372Z",
               "EditorCaption": ""
@@ -193,8 +191,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Actors\\Threat.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAIBJwBsAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-20T12:30:24.355Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-20T12:30:24.355Z"
             },
             {
               "$type": "Document",
