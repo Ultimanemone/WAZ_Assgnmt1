@@ -39,4 +39,5 @@ Thumbs.db
 # Others #
 ##########
 *.cache
-Library/
+Whack-a-zombie/Library/
+!Build/

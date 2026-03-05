@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\Actors\Threat.cs" />
     <Compile Include="Assets\Scripts\Core\TitleInputManager.cs" />
     <Compile Include="Assets\Scripts\SettingsData.cs" />
+    <Compile Include="Assets\Scripts\SettingsSetter.cs" />
     <Compile Include="Assets\Scripts\Core\AspectRatio.cs" />
     <Compile Include="Assets\Scripts\Core\GameManager.cs" />
   </ItemGroup>

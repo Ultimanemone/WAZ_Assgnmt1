@@ -23,7 +23,7 @@ namespace Aimer_Assgnmt1.Actors
         private void Start()
         {
             intervalTime = interval * Time.fixedDeltaTime;
-            cooldown = 6.25f;
+            cooldown = 7.25f;
         }
 
         private void FixedUpdate()

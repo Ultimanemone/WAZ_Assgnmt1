@@ -526,7 +526,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9af3ffffacf3ffff5af6ffff92f6ffff98f6ffff0cfbffff
+      m_ExpandedIDs: 82f3ffff94f3ffff46f6ffff7ef6ffff86f6ffff0cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1250,9 +1250,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -4.7345586, y: -0.28875908, z: -0.12354258}
+    m_Target: {x: 967.18445, y: 236.04889, z: 3.2405856}
     speed: 2
-    m_Value: {x: -4.7345586, y: -0.28875908, z: -0.12354258}
+    m_Value: {x: 967.18445, y: 236.04889, z: 3.2405856}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1302,9 +1302,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.270174
+    m_Target: 875.94147
     speed: 2
-    m_Value: 13.270174
+    m_Value: 875.94147
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1376,7 +1376,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 69122
+  m_LastSelectedObjectID: 63082
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1473,7 +1473,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts/Core
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1483,16 +1483,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts/Core
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\NoOne\Documents\PG\GP\A1\Whack-a-zombie
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e2b50000
-    m_LastClickedID: 46562
-    m_ExpandedIDs: 0000000070b5000072b5000000ca9a3b
+    m_SelectedIDs: 1eb50000
+    m_LastClickedID: 46366
+    m_ExpandedIDs: 00000000a8b40000aab4000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1521,7 +1521,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070b5000072b50000
+    m_ExpandedIDs: 00000000a8b40000aab40000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1575,7 +1575,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 154}
     m_GridSize: 96
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 198

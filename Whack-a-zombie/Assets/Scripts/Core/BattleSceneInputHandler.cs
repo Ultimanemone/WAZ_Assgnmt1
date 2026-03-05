@@ -1,9 +1,9 @@
-using Tanker_Assgnmt2.Actors;
+using Aimer_Assgnmt1.Actors;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Tanker_Assgnmt2.Core
+namespace Aimer_Assgnmt1.Core
 {
     public class BattleSceneInputHandler : MonoBehaviour
     {
@@ -23,7 +23,7 @@ namespace Tanker_Assgnmt2.Core
 
         private void Update()
         {
-            if (Keyboard.current.escapeKey.wasPressedThisFrame)// && BattleSceneManager.instance.state != BattleSceneState.Hitlag)
+            if (Keyboard.current.escapeKey.wasPressedThisFrame && BattleSceneManager.instance.state != BattleSceneState.Results)
             {
                 if (BattleSceneManager.instance.state == BattleSceneState.Settings)
                 {

@@ -14,7 +14,8 @@ namespace Aimer_Assgnmt1.Core
         [SerializeField] private AudioSource _sfx;
         private bool _isPlaying;
         private float _sfxVol = 1f;
-        public int runDuration { get; private set; } = 60;
+        private int runDuration = 69;
+        public int RunDuration { get { return Mathf.Clamp(runDuration, 38, 100); } }
 
         private GameManager() { }
 
@@ -48,6 +49,7 @@ namespace Aimer_Assgnmt1.Core
             currentScene = scene.name;
             isPaused = false;
             Time.timeScale = 1f;
+            _music.Stop();
         }
 
         /// <summary>
@@ -135,20 +137,12 @@ namespace Aimer_Assgnmt1.Core
         private void Update()
         {
             Scene scene = SceneManager.GetActiveScene();
-            if (scene.name == "Title" || scene.name == "Game")
-            {
-                GameObject settings = GameObject.FindWithTag("Settings");
-                if (settings != null)
-                {
-                    SettingsData settingsData = settings.GetComponent<SettingsData>();
-                    _music.volume = settingsData.musicVol / 4f * 0.8f;
-                    _sfxVol = settingsData.sfxVol / 4f;
+            _music.volume = SettingsData.instance.musicVol / 4f * 0.8f;
+            _sfxVol = SettingsData.instance.sfxVol / 4f;
 
-                    if (scene.name == "Title")
-                    {
-                        runDuration = settingsData.runDuration;
-                    }
-                }
+            if (scene.name == "Title")
+            {
+                runDuration = SettingsData.instance.runDuration;
             }
         }
     }

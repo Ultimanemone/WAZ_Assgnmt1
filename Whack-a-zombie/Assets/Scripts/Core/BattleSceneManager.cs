@@ -33,13 +33,13 @@ namespace Aimer_Assgnmt1.Core
         public BattleSceneState state { get; private set; }
         public float Time
         {
-            get { return Mathf.Min(_timer - 7f, GameManager.instance.runDuration); }
+            get { return Mathf.Min(_timer - 7.5f, GameManager.instance.RunDuration); }
         }
         private float TimeLimit
         {
             get
             {
-                return GameManager.instance.runDuration;
+                return GameManager.instance.RunDuration;
             }
         }
         private float _timer;
