@@ -1,9 +1,9 @@
-using Aimer_Assgnmt1.Actors;
+using Tanker_Assgnmt2.Actors;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Aimer_Assgnmt1.Core
+namespace Tanker_Assgnmt2.Core
 {
     public class BattleSceneInputHandler : MonoBehaviour
     {
