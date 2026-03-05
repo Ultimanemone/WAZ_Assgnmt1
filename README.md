@@ -31,3 +31,4 @@
 *  **Difficulty Progression**: The game becomes harder over time by gradually decreasing the spawn time (or cooldown time) to make targets appear faster.
 
 ### Asset sources
+*  SFX and music resources were taken from Limbus Company
